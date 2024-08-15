@@ -5,7 +5,34 @@
 				<a class="nav-item" href="/misc.html">Misc</a>
 		
 			</div>
-<h3>I wanted to start by stating that this is not a typical homelab and that I do most things to learn and tinker and am for the most part not interested in self hosting besides a few things.</h3>
+<html>
+
+<body onload="startTime()">
+
+<h2>The current military time is shown below:</h2>
+
+<div id="show-time"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+</html>
 
 
 
