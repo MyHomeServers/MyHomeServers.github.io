@@ -1,0 +1,33 @@
+# _config.yml
+
+# Theme Configuration
+remote_theme: b2a3e8/jekyll-theme-console
+
+# Plugins
+plugins:
+  - jekyll-remote-theme # This enables the use of remote themes
+
+# Site Settings
+title: My-Home-Servers
+description: A short description of your site
+url: "https://myhomeservers.github.io" 
+baseurl: "" # Leave blank if you are using a user or organization site; otherwise, set to "/repository-name"
+
+# Optional Settings
+# Uncomment and modify these settings if needed
+# logo: /path/to/your/logo.png
+# social:
+#   twitter: your-twitter-handle
+#   github: your-github-username
+#   linkedin: your-linkedin-profile
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from being processed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
