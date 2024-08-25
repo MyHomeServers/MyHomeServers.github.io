@@ -7,76 +7,75 @@
 		
 			</div>
 <h3>This is for my gaming setup and some of the consoles I have. I have an interest in repairing gaming consoles and that is what first sparked my interest in technology. </h3>
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 
-.gallery {
-  /* Negative margin = the padding of the wrapper. This ensures the boxes aligning against the left and right side of the container. Uncomment when this is not wanted. */
-  /* 
-  margin-left: -1rem;
-  margin-right: -1rem;
-  */
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+<div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <div class="gallery_image-graphic" style="background-image: url('https://via.placeholder.com/750x500.png?text=Image%20Example');"></div>
+        <div class="gallery_image-description">make sure to add it to your description.</div>
+      </div>
+    </div>
+  </div>
 
-  
-@media only screen and (max-width: 520px) {
-    
-    .gallery {
-      flex-wrap: wrap;
-    }
-}
+  <h2>Example 2 - Inline images</h2>
+  <div class="gallery">
+    <div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <img class="gallery_image-graphic-inline" src="https://via.placeholder.com/750x500.png?text=Image%20Example" />
+        <div class="gallery_image-description">Image example 1</div>
+      </div>
+    </div>
 
+    <div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <img class="gallery_image-graphic-inline" src="https://via.placeholder.com/750x600.png?text=Image%20Example" />
+        <div class="gallery_image-description">Image example 2</div>
+      </div>
+    </div>
 
-/* Wrapper is needed to create extra space between gallery boxes in case a background color is needed. */
+    <div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <img class="gallery_image-graphic-inline" src="https://via.placeholder.com/750x400.png?text=Image%20Example" />
+        <div class="gallery_image-description">Image example 3</div>
+      </div>
+    </div>
+  </div>
+</body>
 
-.gallery_image-wrapper {
-  padding: 1rem;
-  min-width: 8rem;
-  /* Don't Grow, Do Shrink, Base size of 33.33% */
-  flex: 0 1 33.33%;
-  
-  @media only screen and (max-width: 520px) {
-    flex: 1 1 100%;
-  }
-}
+</html>
+<div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <div class="gallery_image-graphic" style="background-image: url('https://via.placeholder.com/750x500.png?text=Image%20Example');"></div>
+        <div class="gallery_image-description">make sure to add it to your description.</div>
+      </div>
+    </div>
+  </div>
 
-@media only screen and (max-width: 520px) {
-    
-    .gallery_image-wrapper {
-      flex: 1 1 100%;
-    }
-}
+  <h2>Example 2 - Inline images</h2>
+  <div class="gallery">
+    <div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <img class="gallery_image-graphic-inline" src="https://via.placeholder.com/750x500.png?text=Image%20Example" />
+        <div class="gallery_image-description">Image example 1</div>
+      </div>
+    </div>
 
-.gallery_image {}
+    <div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <img class="gallery_image-graphic-inline" src="https://via.placeholder.com/750x600.png?text=Image%20Example" />
+        <div class="gallery_image-description">Image example 2</div>
+      </div>
+    </div>
 
-.gallery_image-description {
-  word-wrap: break-word;
-  word-break: break-word;
-}
+    <div class="gallery_image-wrapper">
+      <div class="gallery_image">
+        <img class="gallery_image-graphic-inline" src="https://via.placeholder.com/750x400.png?text=Image%20Example" />
+        <div class="gallery_image-description">Image example 3</div>
+      </div>
+    </div>
+  </div>
+</body>
 
-.gallery_image-graphic {
-  margin: 0 0 1rem 0;
-  /* Add small spacing between image and description */
-  padding: 0 0 56.25% 0;
-  /* Ratio trick to make sure the images are the same size. */
-  background-size: cover;
-  /* Make sure the image is alway filling/covering the box */
-  background-repeat: no-repeat;
-}
-
-.gallery_image-graphic-inline {
-  max-width: 100%;
-  margin: 0 0 1rem 0;
-  display: block;
-}
-
+</html>
 <div class="gallery_image-wrapper">
       <div class="gallery_image">
         <div class="gallery_image-graphic" style="background-image: url('https://via.placeholder.com/750x500.png?text=Image%20Example');"></div>
